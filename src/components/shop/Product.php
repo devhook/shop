@@ -86,7 +86,7 @@ class Product extends Model
 			'image' => array(
 				'label' => 'Изображения',
 				'field' => array(
-					'field'    => 'image',
+					'type'     => 'image',
 					'mode'     => 'multiple',
 					'path'     => 'files/product',
 					'moveFile' => function($row, $file, $image){

@@ -24,7 +24,7 @@
 			<td class="text-muted"><?=$row->id ?></td>
 
 			<td>
-				<a href=""><?=$row->image(null, array('style'=>'height:30px; margin:-6px -6px -6px 0; display:block')) ?></a>
+				<a href=""><?=$row->image ? HTML::image($row->image, null, array('style'=>'height:30px; margin:-6px -6px -6px 0; display:block')) : '' ?></a>
 			</td>
 
 			<td>

@@ -1,5 +1,7 @@
 <?php namespace Devhook\Shop;
 
+use \Redirect;
+use \Input;
 use \Request;
 use \Admin;
 use \AdminUI;
@@ -107,7 +109,7 @@ class ShopAdminController extends \AdminController {
 
 		return Redirect::back()
 			->withErrors($data->validator())
-			->withInput(Input::all());
+			->withInput(Input::input());
 	}
 
 	//--------------------------------------------------------------------------
